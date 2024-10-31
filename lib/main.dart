@@ -15,25 +15,36 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Todo App',
       theme: ThemeData(
-          checkboxTheme: CheckboxThemeData(
-            shape: RoundedRectangleBorder(
-              borderRadius:
-                  BorderRadius.circular(5.0), // Change the radius here
-            ),
-            side: const BorderSide(
-              color: Color(0xFFC6CFDC),
-              width: 2,
-            ),
+        navigationBarTheme: NavigationBarThemeData(
+          labelTextStyle: WidgetStateProperty.resolveWith<TextStyle?>(
+            (states) {
+              if (states.contains(WidgetState.selected)) {
+                return const TextStyle(color: Colors.blue);
+              }
+              return const TextStyle(color: Colors.grey);
+            },
           ),
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-          appBarTheme: const AppBarTheme(
-            backgroundColor: Color(0xFFFFFFFF),
+        ),
+        checkboxTheme: CheckboxThemeData(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(5.0), // Change the radius here
           ),
-          useMaterial3: true,
-          floatingActionButtonTheme: FloatingActionButtonThemeData(
-              backgroundColor: const Color(0xFF007FFF).withOpacity(0.2),
-              elevation: 0,
-              foregroundColor: const Color(0xFF007FFF))),
+          side: const BorderSide(
+            color: Color(0xFFC6CFDC),
+            width: 2,
+          ),
+        ),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFFFFFFFF),
+        ),
+        useMaterial3: true,
+        floatingActionButtonTheme: FloatingActionButtonThemeData(
+          backgroundColor: const Color(0xFF007FFF).withOpacity(0.2),
+          elevation: 0,
+          foregroundColor: const Color(0xFF007FFF),
+        ),
+      ),
       home: const HomePage(),
     );
   }
