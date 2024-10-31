@@ -100,7 +100,9 @@ class _HomePageState extends State<HomePage> {
                 const Text(
                   "You have no task listed.",
                   style: TextStyle(
-                      fontWeight: FontWeight.w400, color: Color(0xFF8D9CB8)),
+                    fontWeight: FontWeight.w400,
+                    color: Color(0xFF8D9CB8),
+                  ),
                 ),
                 //button
                 const SizedBox(

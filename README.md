@@ -1,16 +1,25 @@
-# todo_app
+# Taski - Flutter Todo Application
 
-A new Flutter project.
+<img src="assets/images/logo.png" width="100" alt="Taski Logo">
 
-## Getting Started
+## Overview
+Taski is a modern, intuitive todo list application built with Flutter. It helps users manage their daily tasks with a clean and user-friendly interface.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Features
+- ✨ Clean and minimal design
+- ✅ Create and manage tasks
+- 🗑️ Delete completed tasks
+- ✔️ Mark tasks as complete/incomplete
+- 🔍 Search functionality
+- 📱 Responsive design
+- 🎯 Focus on user experience
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Demo
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Insert gif or link to demo
+
+## Acknowledgements
+
+ - [Design was From Figma Community](https://www.figma.com/community/file/1313107381046840922/taski-todo-app)
+
