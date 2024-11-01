@@ -17,7 +17,7 @@ Taski is a modern, intuitive todo list application built with Flutter. It helps 
 
 ## Screenshots
 
-![App Screenshot]("assets/images/screenshots/screenshots.png")
+![App Screenshot]("/assets/images/screenshots/screenshots.png")
 
 ## Acknowledgements
 
